@@ -36,7 +36,7 @@ Examples:
 ``chbssum``
 ~~~~~~~~~~~
 
-Compute correcthorse hashes of files. Has the same interface as ``sha256sum``.
+Generate or check file hashes. It has the same interface as ``sha256sum``.
 
 Usage:
 

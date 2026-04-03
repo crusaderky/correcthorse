@@ -6,7 +6,7 @@ Reporting issues
 ----------------
 
 If you find a bug or want to suggest a new feature, please report it on the
-`GitHub issues page <https://github.com/crusaderky/correcthorse/issues>`_.
+`GitHub issues page <https://github.com/crusaderky/chbshash/issues>`_.
 
 Before you report an issue, please check if it can still be reproduced with the
 latest version of this software.
@@ -27,16 +27,16 @@ Deploying a development environment
 
 .. code-block:: bash
 
-     git clone git@github.com:crusaderky/correcthorse.git
-     cd correcthorse
+     git clone git@github.com:crusaderky/chbshash.git
+     cd chbshash
 
 2. `Install pixi <https://pixi.sh/latest/#installation>`_
 3. To keep a fork in sync with the upstream source:
 
 .. code-block:: bash
 
-   cd correcthorse
-   git remote add upstream git@github.com:crusaderky/correcthorse.git
+   cd chbshash
+   git remote add upstream git@github.com:crusaderky/chbshash.git
    git remote -v
    git fetch -a upstream
    git checkout main

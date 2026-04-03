@@ -3,7 +3,7 @@ include LICENSE
 include *.md
 include *.py
 recursive-include doc *
-recursive-include correcthorse *
+recursive-include chbshash *
 prune doc/_build
 global-exclude __pycache__
 global-exclude *.pyc

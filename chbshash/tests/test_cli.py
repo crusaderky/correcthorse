@@ -5,7 +5,7 @@ import sys
 
 import pytest
 
-from correcthorse.cli import chbs, chbssum
+from chbshash.cli import chbs, chbssum
 
 
 def test_chbs_default(capsys):

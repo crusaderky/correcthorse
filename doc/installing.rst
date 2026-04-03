@@ -12,7 +12,7 @@ Installing with conda
 
 .. code-block:: bash
 
-    conda install -c conda-forge correcthorse
+    conda install -c conda-forge chbshash
 
 
 Installing with pip
@@ -20,4 +20,4 @@ Installing with pip
 
 .. code-block:: bash
 
-    pip install correcthorse
+    pip install chbshash

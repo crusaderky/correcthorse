@@ -5,7 +5,7 @@ from random import Random
 
 import pytest
 
-from correcthorse.correcthorse import clear_cache, hash, random, words
+from chbshash.api import clear_cache, hash, random, words
 
 
 def test_words():

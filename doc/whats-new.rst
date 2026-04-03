@@ -1,4 +1,4 @@
-.. currentmodule:: correcthorse
+.. currentmodule:: chbshash
 
 What's New
 ==========

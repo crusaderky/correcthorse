@@ -1,5 +1,5 @@
 [project]
-name = "correcthorse"
+name = "chbshash"
 authors = [{ name = "crusaderky", email = "crusaderky@gmail.com" }]
 license = "Apache-2.0"
 description = "XKCD's Correct Horse Battery Staple passphrase generator and hasher"
@@ -23,14 +23,14 @@ requires-python = ">=3.9"
 dynamic = ["version"]
 
 [project.scripts]
-chbs = "correcthorse.cli:chbs"
-chbssum = "correcthorse.cli:chbssum"
+chbs = "chbshash.cli:chbs"
+chbssum = "chbshash.cli:chbssum"
 
 [project.urls]
-homepage = "https://github.com/crusaderky/correcthorse"
-issues = "https://github.com/crusaderky/correcthorse/issues"
-documentation = "https://correcthorse.readthedocs.io/"
-changelog = "https://correcthorse.readthedocs.io/en/latest/whats-new.html"
+homepage = "https://github.com/crusaderky/chbshash"
+issues = "https://github.com/crusaderky/chbshash/issues"
+documentation = "https://chbshash.readthedocs.io/"
+changelog = "https://chbshash.readthedocs.io/en/latest/whats-new.html"
 
 [project.readme]
 text = "XKCD's Correct Horse Battery Staple passphrase generator and hasher"
@@ -48,7 +48,7 @@ minversion = "9.0"
 strict = true
 addopts = ["-v", "-r", "sxfE", "--color=yes", "--durations=10"]
 python_files = ["test_*.py"]
-testpaths = ["correcthorse/tests"]
+testpaths = ["chbshash/tests"]
 filterwarnings = ["error"]
 
 [tool.coverage.report]
@@ -107,10 +107,10 @@ select = [
 ]
 
 [tool.ruff.lint.isort]
-known-first-party = ["correcthorse"]
+known-first-party = ["chbshash"]
 
 [tool.mypy]
-files = ["correcthorse"]
+files = ["chbshash"]
 python_version = "3.9"
 disallow_incomplete_defs = true
 disallow_untyped_decorators = true
@@ -153,8 +153,8 @@ lint = { cmd = "lefthook run pre-commit --all-files --force", description = "Run
 
 [tool.pixi.feature.smoke.tasks]
 smoke-test = { cmd = "python smoke_test.py", description = "Test import the library and print essential information" }
-chbs = "python -c 'from correcthorse.cli import chbs; chbs()'"
-chbssum = "python -c 'from correcthorse.cli import chbssum; chbssum()'"
+chbs = "python -c 'from chbshash.cli import chbs; chbs()'"
+chbssum = "python -c 'from chbshash.cli import chbssum; chbssum()'"
 
 [tool.pixi.feature.tests.dependencies]
 pytest = "*"

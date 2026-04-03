@@ -1,11 +1,11 @@
-"""Command line interfaces for correcthorse."""
+"""Command line interfaces for chbshash."""
 
 from __future__ import annotations
 
 import argparse
 import sys
 
-from correcthorse.correcthorse import hash, random
+from chbshash.api import hash, random
 
 
 def chbs(argv: list[str] | None = None) -> None:
@@ -40,9 +40,9 @@ def chbs(argv: list[str] | None = None) -> None:
 
 
 def chbssum(argv: list[str] | None = None) -> None:
-    """Hash files using correcthorse, with the same API as sha256sum."""
+    """Hash files using chbshash, with the same API as sha256sum."""
     parser = argparse.ArgumentParser(
-        description="Compute correcthorse hashes of files, like sha256sum."
+        description="Compute chbshash hashes of files, like sha256sum."
     )
     parser.add_argument(
         "files",

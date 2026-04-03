@@ -1,17 +1,17 @@
-correcthorse: XKCD's *Correct Horse Battery Staple* passphrase generator and hasher
-===================================================================================
+chbshash: XKCD's *Correct Horse Battery Staple* passphrase generator and hasher
+===============================================================================
 
 .. image:: _static/password_strength_2x.png
    :alt: XKCD comic #936: Password Strength
 
-`correcthorse` is a Python library and command-line tool for generating random
+`chbshash` is a Python library and command-line tool for generating random
 passphrases and hashing buffers and files. It is inspired by the `XKCD #936
 <https://xkcd.com/936/?correct=horse&battery=staple>`__ comic.
 
 
 Quick Start
 -----------
-`correcthorse` offers two command-line tools:
+`chbshash` offers two command-line tools:
 
 .. code-block:: bash
 
@@ -28,7 +28,7 @@ Quick Start
 
 It's also available as a Python library:
 
->>> from correcthorse import random, hash
+>>> from chbshash import random, hash
 >>> random()
 'practicing elatery unbenight stopwork'
 >>> random(3, sep="-")
@@ -41,14 +41,14 @@ It's also available as a Python library:
 
 Entropy and Security
 --------------------
-`correcthorse` uses a dictionary of the 370,105 most common English words to generate
+`chbshash` uses a dictionary of the 370,105 most common English words to generate
 passphrases. With the default 4 words per passphrase, there are 370,105\ :sup:`4` ≈ 2\
 :sup:`74` ≈ 10\ :sup:`22` possible combinations. That's more than in the XKCD comic!
 This makes it much stronger than typical passwords, as explained by the comic.
 
 For hashing, this is lower than the industry standard, SHA-256, which features entropy
 of 2\ :sup:`256` ≈ 10\ :sup:`77`. This means it is still statistically impossible to
-obtain a collision with `correcthorse` hashes by chance, but it is not cryptographically
+obtain a collision with `chbshash` hashes by chance, but it is not cryptographically
 secure, as a collision may be crafted given enough computing power and time.
 
 .. toctree::

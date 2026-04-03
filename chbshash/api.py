@@ -19,7 +19,7 @@ else:
 def words() -> list[str]:
     """Return the domain of used words."""
     with (
-        resources.open_binary("correcthorse", "words_alpha.json.gz") as fh,
+        resources.open_binary("chbshash", "words_alpha.json.gz") as fh,
         gzip.open(fh, "rt") as gzfh,
     ):
         return json.load(gzfh)
